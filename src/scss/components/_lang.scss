@@ -1,0 +1,23 @@
+.lc {
+  &-container {
+    display: block;
+  }
+  &-row {
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-content {
+    display: flex;
+    &_btn {
+      background-color: $blood;
+      &:nth-of-type(0n+1) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

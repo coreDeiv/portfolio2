@@ -1,5 +1,17 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+// Avstracts
+@import "abstracts/variables";
+
+// Base
+@import "base/reset";
+@import "base/typography";
+
+// Components
+@import "components/animations";
+@import "components/bg-main";
+@import "components/buttons";
+@import "components/header";
+@import "components/lang";
+@import "components/navigation";
+
+// Vendors
+@import "vendors/normalize";

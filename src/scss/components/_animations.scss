@@ -1,0 +1,75 @@
+@keyframes openNav {
+  0% {
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+  }
+  50% {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 75px;
+    background-color: $blood;
+  }
+  100% {
+    width: 100%;
+    background-color: $blood;
+  }
+}
+@keyframes openNav2 {
+  0% {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 75px;
+    background-color: $blood;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $blood;
+  }
+}
+
+@keyframes closeNav {
+  0% {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $blood;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 75px;
+    background-color: $blood;
+  }
+}
+@keyframes closeNav2 {
+  0% {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 75px;
+    background-color: $blood;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+  }
+}

@@ -1,5 +1,3 @@
-# Eliminar este archivo
-
 sass/
 |
 |– abstracts/

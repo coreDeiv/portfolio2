@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Coredeiv | Home</title><link rel="stylesheet" href="../css/main.css"><link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/f953dcffa0.js" crossorigin="anonymous"></script></head><body class="dark"><header><nav id="nav" class=""><a href="#" id="open-nav" class="btn-nav"><div class="btn-block_action"><span></span> <span></span> <span></span></div></a><ul><li><a href="#">Hola</a></li><li><a href="#">Mundo</a></li></ul></nav></header><script src="https://code.jquery.com/jquery-3.4.0.min.js"></script><script src="js/index.js"></script><script>$(document).ready(function(){
+        $('#open-nav').click((e) => {
+          e.preventDefault();
+          if ($('#nav').hasClass('show')) {
+            $('#nav').removeClass('show');
+            $('#nav').addClass('hide');
+            $('#nav ul').css('opacity', 0);
+            $('#nav ul').css('display', 'none');
+            $('#open-nav').removeClass('times');
+            setTimeout(() => {
+              $('#nav').removeClass('phase-2');
+              $('#nav').addClass('phase-3');
+              setTimeout(() => {
+                $('#nav').removeClass('phase-3');
+                $('#nav').removeClass('hide');
+              }, 3000);
+            }, 2000);
+          } else {
+            e.preventDefault();
+            $('#nav').removeClass('hide');
+            $('#nav').addClass('show');
+            setTimeout(() => {
+              $('#nav').addClass('phase-2');
+              $('#open-nav').addClass('times');
+            }, 1500);
+            setTimeout(() => {
+              $('#nav ul').css('opacity', 1);
+              $('#nav ul').css('display', 'block');
+            }, 3500);
+          }
+        });
+        $('#nav ul li a').click((e) => {
+          if ($('#nav').hasClass('show')) {
+            $('#nav').removeClass('show');
+            $('#nav').addClass('hide');
+            setTimeout(() => {
+              $('#nav').removeClass('phase-3');
+            }, 1500);
+          }
+        });
+      });</script></body></html>

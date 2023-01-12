@@ -1,0 +1,52 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  ul {
+    opacity: 0;
+    list-style: none;
+    text-align: center;
+    li {
+      margin: 5px 0;
+      a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $white;
+        padding: 10px 30px;
+        font-size: 3rem;
+        letter-spacing: 3px;
+      }
+    }
+  }
+  &.show {
+    animation: forwards openNav 3s;
+    transition: ease .3s all;
+    .btn-block_action span {
+      background-color: $white;
+    }
+  }
+  &.phase-2 {
+    animation: forwards openNav2 2s;
+  }
+  &.hide {
+    animation: forwards closeNav 2s;
+    background-color: transparent;
+    .btn-block_action span {
+      background-color: $white;
+    }
+  }
+  &.phase-3 {
+    animation: forwards closeNav2 3s;
+    background-color: transparent;
+    .btn-block_action span {
+      background-color: $blood;
+    }
+  }
+}

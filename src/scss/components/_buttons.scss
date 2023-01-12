@@ -1,0 +1,89 @@
+.btn {
+  display: inline-block;
+  appearance: none;
+  text-decoration: none;
+  color: unset;
+  width: auto; 
+  height: auto;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  transition: ease .3s all;  
+  &-lang {
+    padding: 30px 70px;
+    text-align: center;
+    background-color: $dark;
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-duration: .3s;
+    span {
+      font-size: 2rem;
+      color: rgba(131, 131, 131, .5);
+      text-transform: uppercase;
+    }
+    &:hover {
+      transform: translate3d(0.3rem, -0.3rem, 0px);
+      transition-delay: 75ms;
+      span {
+        color: $blood;
+        text-shadow: 0px 0px 20px rgba($blood, .1);
+      }
+    }
+  }
+  &-block_action {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span {
+      display: block;
+      width: 35px;
+      height: 5px;
+      background-color: $blood;
+      border-radius: 50px;
+      margin-top: 2px;
+      transition: ease .3s all;
+    }
+    &:hover {
+      span { margin-top: 5px; }
+      span:first-child { margin-top: 0px; }
+      span:last-child { margin-top: 5px; }
+    }
+  }
+  &-nav.times {
+    &:hover {
+      .btn-block_action span {
+        display: none;
+        &:first-child, &:last-child { display: block; }
+        &:first-child {
+          transform: translateY(5px) rotate(35deg);
+          transition-delay: 75ms;
+        }
+        &:last-child {
+          transform: translateY(-5px) rotate(-35deg);
+          transition-delay: 75ms;
+        }
+      }
+    }
+    .btn-block_action span {
+      display: none;
+      &:first-child, &:last-child { display: block; }
+      // El primer y ultimo elemento rotan para que intercalados parezcan una x
+      &:first-child {
+        transform: translateY(5px) rotate(45deg);
+        transition-delay: 75ms;
+      }
+      &:last-child {
+        transform: translateY(-2.5px) rotate(-45deg);
+        transition-delay: 75ms;
+      }
+    }
+  }
+}
