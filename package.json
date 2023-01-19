@@ -36,5 +36,8 @@
   "bugs": {
     "url": "https://github.com/coreDeiv/portfolio2/issues"
   },
-  "homepage": "https://github.com/coreDeiv/portfolio2#readme"
+  "homepage": "https://github.com/coreDeiv/portfolio2#readme",
+  "directories": {
+    "doc": "docs"
+  }
 }
