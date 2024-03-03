@@ -20,7 +20,7 @@ nav {
         display: block;
         text-decoration: none;
         text-transform: uppercase;
-        color: $white;
+        color: $dark;
         padding: 10px 30px;
         font-size: 3rem;
         letter-spacing: 3px;
@@ -31,7 +31,7 @@ nav {
     animation: forwards openNav 3s;
     transition: ease .3s all;
     .btn-block_action span {
-      background-color: $white;
+      background-color: $dark;
     }
   }
   &.phase-2 {
@@ -41,14 +41,14 @@ nav {
     animation: forwards closeNav 2s;
     background-color: transparent;
     .btn-block_action span {
-      background-color: $white;
+      background-color: $dark;
     }
   }
   &.phase-3 {
     animation: forwards closeNav2 3s;
     background-color: transparent;
     .btn-block_action span {
-      background-color: $blood;
+      background-color: $mauve;
     }
   }
 }

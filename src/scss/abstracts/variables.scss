@@ -6,15 +6,16 @@ $white:          #fff         !default;
 $gray:           #ccc         !default;
 
 // Pallette
-$blood:          #A3333D      !default;
-$dark:           #1B1B1E      !default;
+$safron:         #fac748      !default;
+$dark:           #18281e      !default;
+$mauve:          #E4C1F9      !default;
 
 :root {
   
-  --coredeiv-color-white: #ffffff;
-  --coredeiv-color-black: #000000;
-  --coredeiv-color-grayd: #cccccc;
-  --coredeiv-color-blood: #A3333D;
-  --coredeiv-color-dark: #1B1B1E;
+  --coredeiv-color-white:     #ffffff;
+  --coredeiv-color-black:     #000000;
+  --coredeiv-color-gray:      #cccccc;
+  --coredeiv-color-safron:    #A3333D;
+  --coredeiv-color-dark:      #18281e;
   
 }

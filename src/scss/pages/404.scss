@@ -11,7 +11,7 @@ body#error-page {
   justify-content: center;
   background-color: #000;
   flex-direction: column;
-  h1, h2, h3, h4, h5, h6 { color: $blood; }
+  h1, h2, h3, h4, h5, h6 { color: $safron; }
   .error {
     &-title {
       font-size: 10rem;
@@ -25,7 +25,7 @@ body#error-page {
       font-weight: 100;
       button, a {
         background: transparent;
-        color: $blood;
+        color: $safron;
         border: none;
         text-decoration: none;
         &:hover {
@@ -35,15 +35,15 @@ body#error-page {
     }
     &-button {
       a {
-        border: 1px solid $blood;
+        border: 1px solid $safron;
         padding: 10px 30px;
         text-decoration: none;
-        color: $blood;
+        color: $safron;
         transition: ease .3s all;
         text-transform: uppercase;
         &:hover {
           cursor: pointer;
-          background-color: $blood;
+          background-color: $safron;
           color: $black;
         }
       }
